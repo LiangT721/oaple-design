@@ -3,11 +3,12 @@ import { connect } from "react-redux";
 import "./header.style.scss";
 
 import logo from "../../asset/logo_s.png";
-import Nav from "../nav/nav.component";
+import NavMobile from "../navMobile/navMobile.component";
+import NavDesktop from "../navDesktop/navDesktop.component";
 
 const Header = ({ test }) => (
-  <div className="header">
-    <div className="header-container container-xxl">
+  <div className="header  h-auto">
+    <div className="header-container container-xxl h-auto pb-3">
       <div className="row">
         <div className=" logo-container col-sm-4 p-3">
           <div className="row h-100">
@@ -21,7 +22,8 @@ const Header = ({ test }) => (
           </div>
         </div>
         <div className="nav-container col-sm-8 h-auto p-0">
-          <Nav />
+          <NavMobile className="d-sm-none"/>
+          <NavDesktop  />
         </div>
       </div>
     </div>

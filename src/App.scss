@@ -17,3 +17,13 @@ div{
   padding: 0;
   margin: 0;
 }
+
+
+@media screen and (min-width: 600px) {
+  .fs-sm-title{
+    font-size: 26px !important;
+  }
+  .w-sm-auto{
+    width: auto !important;
+  }
+}
