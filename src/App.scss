@@ -3,9 +3,9 @@ $theme-colors: (
   'gray':#A3A3A3,
   'light-gray':#F1F1F1,
   'dark-gray':#6E6E6E,
-  'col1':rgb(161, 161, 255),
+  'color1':rgb(161, 161, 255),
   'color2':rgb(238, 4, 238),
-  'col3':rgb(247, 247, 157),
+  'color3':rgb(247, 247, 157),
   'white':#ffffff,
   'purple':purple,
 );
@@ -15,6 +15,5 @@ $theme-colors: (
 
 div{
   padding: 0;
-  color: blue;
   margin: 0;
 }

@@ -6,18 +6,24 @@ import logo from "../../asset/logo_s.png";
 import Nav from "../nav/nav.component";
 
 const Header = ({ test }) => (
-  <div className="header bg-light-gray">
-    <div className="header-container bg-col1 container-xxl">
-      <div className="bg-col3 logo-container row  p-2">
-       <div className="logo-img bg-white col-4 d-flex justify-content-center align-items-center ">
-			 	<img src={ logo } className="logo" alt="" />
-			 </div>
-			 <div className="logo-text col-8 d-flex justify-content-center align-items-center">
-			 	<span className="oaple text-uppercase">oaple</span>
-				<span className="design text-uppercase">design</span>
-			 </div>
+  <div className="header">
+    <div className="header-container container-xxl">
+      <div className="row">
+        <div className=" logo-container col-sm-4 p-3">
+          <div className="row h-100">
+            <div className="logo-img col-4 d-flex justify-content-center align-items-center ">
+              <img src={logo} className="logo" alt="" />
+            </div>
+            <div className="logo-text col-7 px-0 d-flex justify-content-center align-items-center">
+              <span className="oaple text-dark text-capitalize">oaple</span>
+              <span className="design text-gray text-capitalize">design</span>
+            </div>
+          </div>
+        </div>
+        <div className="nav-container col-sm-8 h-auto p-0">
+          <Nav />
+        </div>
       </div>
-      <Nav className="nav-container col-sm-8" />
     </div>
   </div>
 );
