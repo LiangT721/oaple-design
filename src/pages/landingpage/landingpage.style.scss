@@ -1,3 +1,11 @@
 .landingpage {
-    height: 90vh;
+    height: 81vh;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .slider-img {
+        height: 82vh;
+        background-color: salmon;
+        object-fit:cover;
+    }
 }
