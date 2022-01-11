@@ -1,9 +1,8 @@
-import Header from "./component/header/header.component";
 import { Routes, Route } from "react-router-dom";
-
 import "./App.scss";
 
-const Page2 = () => <div>Page2</div>;
+import Header from "./component/header/header.component";
+import Landingpage from "./pages/landingpage/landingpage.component";
 
 function App({test}) {
   return (
@@ -11,7 +10,7 @@ function App({test}) {
       <Header />
       {test}
       <Routes>
-        <Route path="/" element={ <Page2 />} />
+        <Route path="/" element={ <Landingpage />} />
       </Routes>
     </div>
   );

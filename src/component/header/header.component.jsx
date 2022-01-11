@@ -10,7 +10,7 @@ const Header = ({ test }) => (
   <div className="header  h-auto">
     <div className="header-container container-xxl h-auto pb-3">
       <div className="row">
-        <div className=" logo-container col-sm-4 p-3">
+        <div className=" logo-container col-sm-4 p-3 bg-white">
           <div className="row h-100">
             <div className="logo-img col-4 d-flex justify-content-center align-items-center ">
               <img src={logo} className="logo" alt="" />

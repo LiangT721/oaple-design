@@ -1,5 +1,7 @@
 .nav {
   .menu-container {
+    transition: all 0.5s linear 0s;
+    overflow: hidden;
     div {
       font-family: Raleway;
       font-style: normal;
@@ -10,5 +12,17 @@
   }
   .nav-icon {
     width: 30px;
+    .upIcon {
+      transition: all 0.5s linear 0s;
+    }
   }
+}
+.fold {
+  height: 0;
+}
+.unfold{
+  height: 300px;
+}
+.down {
+  transform: rotate(180deg);
 }
