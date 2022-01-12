@@ -8,7 +8,7 @@ import NavDesktop from "../navDesktop/navDesktop.component";
 
 const Header = ({ test }) => (
   <div className="header  h-auto">
-    <div className="header-container container-xxl h-auto pb-3">
+    <div className="header-container container-xxl pb-3">
       <div className="row">
         <div className=" logo-container col-sm-4 p-3 bg-white">
           <div className="row h-100">

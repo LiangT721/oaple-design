@@ -1,0 +1,18 @@
+.nav-desktop {
+  display: flexbox;
+  justify-content: end;
+  align-items: center;
+  margin-top: 5px;
+  padding-right: 20px;
+  .nav-element {
+    margin: 0 10px;
+    .text-container {
+      margin:0 15px;
+      font-size: 30px;
+      font-weight: 300;
+      div{
+          margin-bottom: 5px;
+      }
+    }
+  }
+}
