@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Text from "../text/text.component";
 import NavUnderline from "../navUnderline/navUnderline.component";
@@ -12,30 +13,30 @@ const contact = ["contact", "联系我们", 'contact'];
 
 const NavDesktop = () => (
   <div className="nav-desktop d-none d-sm-flex h-100">
-    <div className="nav-element about-us w-auto ">
+    <Link to='aboutus' className="link nav-element about-us w-auto ">
       <div className="text-container">
         <Text text={aboutUs} />
       </div>
       <NavUnderline page={aboutUs[2]} />
-    </div>
-    <div className="nav-element my-service w-auto ">
+    </Link>
+    <Link to='myservice' className="link nav-element my-service w-auto ">
       <div className="text-container">
         <Text text={myService} />
       </div>
       <NavUnderline page={myService[2]} />
-    </div>
-    <div className="nav-element portfolio w-auto ">
+    </Link>
+    <Link to='portfolio' className="link nav-element portfolio w-auto ">
       <div className="text-container">
         <Text text={portfolio} />
       </div>
       <NavUnderline page={portfolio[2]} />
-    </div>
-    <div className="nav-element contact w-auto ">
+    </Link>
+    <Link to='contact' className="link nav-element contact w-auto ">
       <div className="text-container">
         <Text text={contact} />
       </div>
       <NavUnderline page={contact[2]} />
-    </div>
+    </Link>
   </div>
 );
 

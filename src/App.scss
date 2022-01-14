@@ -1,29 +1,36 @@
 $theme-colors: (
-  'dark':#1E1E1E,
-  'gray':#A3A3A3,
-  'light-gray':#F1F1F1,
-  'dark-gray':#6E6E6E,
-  'color1':rgb(161, 161, 255),
-  'color2':rgb(238, 4, 238),
-  'color3':rgb(247, 247, 157),
-  'white':#ffffff,
-  'purple':purple,
+  "dark": #1e1e1e,
+  "gray": #a3a3a3,
+  "light-gray": #f1f1f1,
+  "dark-gray": #6e6e6e,
+  "color1": rgb(161, 161, 255),
+  "color2": rgb(238, 4, 238),
+  "color3": rgb(247, 247, 157),
+  "white": #ffffff,
+  "purple": purple,
 );
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
 
-div{
+div {
   padding: 0;
   margin: 0;
 }
 
+.link {
+  color: black;
+  text-decoration: none;
+  :hover {
+    color: black;
+  }
+}
 
 @media screen and (min-width: 600px) {
-  .fs-sm-title{
+  .fs-sm-title {
     font-size: 26px !important;
   }
-  .w-sm-auto{
+  .w-sm-auto {
     width: auto !important;
   }
 }

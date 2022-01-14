@@ -6,12 +6,15 @@
   padding-right: 20px;
   .nav-element {
     margin: 0 10px;
+
     .text-container {
-      margin:0 15px;
+      margin: 0 15px;
       font-size: 30px;
       font-weight: 300;
-      div{
-          margin-bottom: 5px;
+      transition: all 0.5s linear 0s;
+      div {
+        margin-bottom: 5px;
+    
       }
     }
   }

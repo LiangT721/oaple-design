@@ -1,10 +1,26 @@
 .nav-underline{
     height: 2px;
-    background-color: rgb(82, 82, 82);
+    position: relative;
+    width: 100%;
 }
 
+.left{
+    transition: all 0.5s linear;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(82, 82, 82);
+    // transform: rotate(180deg);
+};
+.right{
+    // transform: rotate(180deg);
+    transition: all 0.5s linear;  
+    right: 0;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(82, 82, 82);
+}
 .expand{
-    width: 100%;
+    width: 50%;
 }
 
 .unexpand{
