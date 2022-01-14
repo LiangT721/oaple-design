@@ -1,36 +1,64 @@
 import React from "react";
 import upIcon from "../../asset/chevron-double-up.svg";
+import { Link } from "react-router-dom";
 
 import { toggleNavHidden } from "../../redux/header/header.action";
+import Text from "../text/text.component";
 
 import { connect } from "react-redux";
 
 import "./navMobile.style.scss";
 
-const NavMobile = ({NavHidden, toggleNavHidden}) => (
+const aboutUs = ["about us", "关于我们", "aboutus"];
+const myService = ["my service", "我们的服务", "myservice"];
+const portfolio = ["portfolio", "作品", "portfolio"];
+const contact = ["contact", "联系我们", "contact"];
+
+const NavMobile = ({ NavHidden, toggleNavHidden }) => (
   <div className="nav d-flex justify-content-center d-sm-none">
-    <div 
-      className={`${NavHidden? "fold":"unfold"} menu-container w-100 text-center pb-3`}
+    <div
+      className={`${
+        NavHidden ? "fold" : "unfold"
+      } menu-container w-100 text-center pb-3`}
     >
-        <div className="about-us border-bottom fs-1">about us</div>
-        <div className="my-service border-bottom fs-1">my service</div>
-        <div className="portfolio border-bottom fs-1">portfolio</div>
-        <div className="contact border-bottom fs-1">contact</div>
+      <Link to="aboutus" className="link">
+        <div className="text-container about-us border-bottom fs-1">
+          <Text text={aboutUs} />
+        </div>
+      </Link>
+      <Link to="myservice" className="link">
+        <div className="text-container my-service border-bottom fs-1">
+          <Text text={myService} />
+        </div>
+      </Link>
+      <Link to="portfolio" className="link">
+        <div className="text-container portfolio border-bottom fs-1">
+          <Text text={portfolio} />
+        </div>
+      </Link>
+      <Link to="contact" className="link">
+        <div className="text-container contact border-bottom fs-1">
+          <Text text={contact} />
+        </div>
+      </Link>
     </div>
     <div className="nav-icon">
-      <img src={upIcon} className={`${NavHidden? "down":""} upIcon text-dark`} 
+      <img
+        src={upIcon}
+        className={`${NavHidden ? "down" : ""} upIcon text-dark`}
         onClick={toggleNavHidden}
-        alt=""  />
+        alt=""
+      />
     </div>
   </div>
 );
 
 const mapStateToProps = (state) => ({
-  NavHidden: state.header.NavHidden
-})
+  NavHidden: state.header.NavHidden,
+});
 
 const mapDispatchToProps = (dispatch) => ({
-  toggleNavHidden: () => dispatch(toggleNavHidden())
-})
+  toggleNavHidden: () => dispatch(toggleNavHidden()),
+});
 
-export default connect(mapStateToProps,mapDispatchToProps)(NavMobile);
+export default connect(mapStateToProps, mapDispatchToProps)(NavMobile);
