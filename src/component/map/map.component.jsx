@@ -31,7 +31,7 @@ const GoogleMapDiv = () => {
   return (
     <Fragment>
       <div className="map-div h-30">
-        <LoadScript googleMapsApiKey="AIzaSyCVn8j7i91bpqtxtiOFVG93PvJpoWKJMmU">
+        <LoadScript googleMapsApiKey="apiKey">
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}

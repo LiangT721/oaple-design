@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import GoogleMapDiv from "../../component/map/map.component";
 import ContactText from "../../component/contactText/contactText.component";
+import Footer from "../../component/footer/footer.component";
 
 
 import "./contactPage.style.scss";
@@ -16,6 +17,7 @@ const ContactPage = () => {
       <div className="contact-text">
         <ContactText />
       </div>
+      <Footer />
     </Fragment>
   );
 };
