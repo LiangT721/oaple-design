@@ -1,9 +1,30 @@
 .footer {
-  height: 200px;
+  height: auto;
+  position: relative;
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 16px;
+}
+.footer-icon {
+  height: 16px;
+}
+.splitter {
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100vw;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+.footer-up{
+    margin:0 !important;
+}
+.footer-title .footer-content-div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
