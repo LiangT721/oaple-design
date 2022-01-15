@@ -27,6 +27,9 @@ div {
     color: black;
   }
 }
+.h-30vh{
+  height: 30vh;
+}
 
 @media screen and (min-width: 600px) {
   .fs-sm-title {
@@ -34,5 +37,8 @@ div {
   }
   .w-sm-auto {
     width: auto !important;
+  }
+  .h-sm-30vh {
+    height: 30vh !important;
   }
 }

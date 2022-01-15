@@ -11,8 +11,8 @@ const Header = ({ test }) => (
   <div className="header  h-auto">
     <div className="header-container container-xxl pb-3">
       <div className="row">
-        <Link to="/" className="link">
-          <div className=" logo-container col-sm-4 p-3 bg-white">
+        <div className=" logo-container col-sm-4 p-3 bg-white">
+          <Link to="/" className="link">
             <div className="row h-100">
               <div className="logo-img col-4 d-flex justify-content-center align-items-center ">
                 <img src={logo} className="logo" alt="" />
@@ -22,9 +22,8 @@ const Header = ({ test }) => (
                 <span className="design text-gray text-capitalize">design</span>
               </div>
             </div>
-          </div>
-        </Link>
-
+          </Link>
+        </div>
         <div className="nav-container col-sm-8 h-auto p-0">
           <NavMobile className="d-sm-none" />
           <NavDesktop />

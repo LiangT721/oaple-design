@@ -21,22 +21,22 @@ const NavMobile = ({ NavHidden, toggleNavHidden }) => (
         NavHidden ? "fold" : "unfold"
       } menu-container w-100 text-center pb-3`}
     >
-      <Link to="aboutus" className="link">
+      <Link to="aboutus" className="link" onClick={toggleNavHidden}>
         <div className="text-container about-us border-bottom fs-1">
           <Text text={aboutUs} />
         </div>
       </Link>
-      <Link to="myservice" className="link">
+      <Link to="myservice" className="link" onClick={toggleNavHidden}>
         <div className="text-container my-service border-bottom fs-1">
           <Text text={myService} />
         </div>
       </Link>
-      <Link to="portfolio" className="link">
+      <Link to="portfolio" className="link" onClick={toggleNavHidden}>
         <div className="text-container portfolio border-bottom fs-1">
           <Text text={portfolio} />
         </div>
       </Link>
-      <Link to="contact" className="link">
+      <Link to="contact" className="link" onClick={toggleNavHidden}>
         <div className="text-container contact border-bottom fs-1">
           <Text text={contact} />
         </div>

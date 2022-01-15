@@ -7,7 +7,6 @@ const NavUnderline = (props) => {
   const pathname = useLocation().pathname;
   const expand = pathname.includes(props.page);
 
-  console.log(expand);
 
   return (
     <Fragment>
