@@ -1,6 +1,6 @@
 .footer {
   height: auto;
-  position: relative;
+  width: 100vw;
 
   font-family: Roboto;
   font-style: normal;
@@ -27,4 +27,7 @@
     margin: 0 !important;
     padding: 0 !important;
   }
+.footer-title{
+  text-align: center;
+}
 }
