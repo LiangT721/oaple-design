@@ -1,0 +1,21 @@
+.about-us-content-container{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px; 
+
+    letter-spacing: 0.05em;
+    color: #000000;
+
+    .about-us-content{
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .about-us-content-container{
+        margin: 0 40px;
+    }
+}

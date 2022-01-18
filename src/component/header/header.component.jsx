@@ -25,7 +25,7 @@ const Header = ({ test }) => (
           </Link>
         </div>
         <div className="nav-container col-sm-8 h-auto p-0">
-          <NavMobile className="d-sm-none" />
+          <NavMobile />
           <NavDesktop />
         </div>
       </div>

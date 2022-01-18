@@ -13,10 +13,16 @@ const headerReducer = (state = INITIAL_STATE, action) => {
         ...state,
         NavHidden:!state.NavHidden,
       };
-    case HeaderActionTypes.TOGGLE_LANGUAGE:
+    case HeaderActionTypes.TOGGLE_LANGUAGE_CHI:
       return{
         ...state,
-        eng:!state.eng
+        eng:false
+      }
+
+    case HeaderActionTypes.TOGGLE_LANGUAGE_ENG:
+      return{
+        ...state,
+        eng:true
       }
     default:
       return state;

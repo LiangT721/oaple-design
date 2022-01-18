@@ -1,6 +1,7 @@
 import React from "react";
 
 import { myServiceList } from "../../data/OurServiceText.data";
+import Text from '../text/text.component';
 
 import "./myServiceContent.style.scss";
 
@@ -18,13 +19,13 @@ const MyServiceContent = () => {
               />
             </div>
             <div className="my-service-title text-center my-3">
-              {myService.title}
+              <Text text={myService.title} />
             </div>
             <div className="my-service-list mx-5">
               <ol>
                 {myService.content.map((service, index) => (
                   <li key={index} className="my-service-list-content my-2 px-1">
-                    {service}
+                    <Text text={service} />
                   </li>
                 ))}
               </ol>

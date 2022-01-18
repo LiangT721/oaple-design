@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { toggleNavHidden } from "../../redux/header/header.action";
 import Text from "../text/text.component";
+import LanguageToggle from "../languageToggle/languageToggle.component";
 
 import { connect } from "react-redux";
 
@@ -15,7 +16,7 @@ const portfolio = ["portfolio", "作品", "portfolio"];
 const contact = ["contact", "联系我们", "contact"];
 
 const NavMobile = ({ NavHidden, toggleNavHidden }) => (
-  <div className="nav d-flex justify-content-center d-sm-none">
+  <div className="nav d-flex justify-content-center d-md-none">
     <div
       className={`${
         NavHidden ? "fold" : "unfold"
@@ -41,6 +42,7 @@ const NavMobile = ({ NavHidden, toggleNavHidden }) => (
           <Text text={contact} />
         </div>
       </Link>
+      <LanguageToggle />
     </div>
     <div className="nav-icon">
       <img
