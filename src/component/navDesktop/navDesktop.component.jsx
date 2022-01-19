@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Text from "../text/text.component";
 import NavUnderline from "../navUnderline/navUnderline.component";
+import LanguageToggle from "../languageToggle/languageToggle.component";
 
 import "./navDesktop.style.scss";
 
@@ -37,6 +38,10 @@ const NavDesktop = () => (
       </div>
       <NavUnderline page={contact[2]} />
     </Link>
+    <div className="desktop-toggle-container w-auto ms-5">
+    <LanguageToggle />
+    </div>
+
   </div>
 );
 
