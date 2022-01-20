@@ -1,0 +1,12 @@
+.portfolio-group-list-project-title-container{
+    background-color: rgba(255, 235, 205, 0.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .portfolio-group-list-project-text-container{
+        background-color: #080808c4;
+        padding: 10px;
+        border-radius: 5%;
+    }
+}

@@ -1,0 +1,6 @@
+const ProjectActionTypes = {
+    TOGGLE_PROJECT_CATEGORY_1:'TOGGLE_PROJECT_CATEGORY_1',
+    TOGGLE_PROJECT_CATEGORY_2:'TOGGLE_PROJECT_CATEGORY_2',
+}
+
+export default ProjectActionTypes;

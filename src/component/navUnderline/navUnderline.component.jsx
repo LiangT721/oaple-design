@@ -1,12 +1,9 @@
 import React, { Fragment } from "react";
-import { useLocation } from "react-router-dom";
 
 import "./navUnderline.style.scss";
 
 const NavUnderline = (props) => {
-  const pathname = useLocation().pathname;
-  const expand = pathname.includes(props.page);
-
+  const expand = props.expand;
 
   return (
     <Fragment>

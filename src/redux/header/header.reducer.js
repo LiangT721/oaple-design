@@ -2,7 +2,6 @@ import HeaderActionTypes from "./header.type";
 
 const INITIAL_STATE = {
   NavHidden: true,
-  test: "aaaaa",
   eng: true,
 };
 
