@@ -28,13 +28,12 @@ const PortfolioPage = ({ projectCategory,toggleProjectCategory1,toggleProjectCat
         <Text text={title} />
       </div>
       <div className="my-service-subtitle-container d-flex justify-content-evenly m-5">
-        <div className="my-service-subtitle"
+        <div className={`${projectCategory? "":"unselect"} my-service-subtitle`}
           onClick={toggleProjectCategory1}>
           <Text text={subTitle1} />
           <NavUnderline expand={projectCategory} />
         </div>
-
-        <div className="my-service-subtitle"
+        <div className={`${!projectCategory? "":"unselect"} my-service-subtitle`}
           onClick={toggleProjectCategory2}>
           <Text text={subTitle2} />
           <NavUnderline expand={!projectCategory} />
