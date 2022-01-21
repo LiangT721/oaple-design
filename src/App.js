@@ -9,6 +9,7 @@ import AboutUsPage from "./pages/aboutUsPage/aboutUsPage.component";
 import MyServicePage from "./pages/myServicePage/myServicePage.component";
 import PortfolioPage from "./pages/portfolioPage/portfolioPage.component";
 import ContactPage from "./pages/contactPage/contactPage.component";
+import ProjectPage from "./pages/projectPage/projectPage.component";
 
 function App({test}) {
   const pathname = useLocation().pathname;
@@ -19,10 +20,11 @@ function App({test}) {
       <Header />
       {test}
       <Routes>
-        <Route path="/" element={ <Landingpage />} />
+        <Route path="/" element={ <Landingpage />} exact/>
         <Route path="/aboutus" element={ <AboutUsPage />} />
         <Route path="/myservice" element={ <MyServicePage />} />
-        <Route path="/portfolio" element={ <PortfolioPage />} />
+        <Route path="/portfolio" element={ <PortfolioPage />} exact />
+        <Route path="/portfolio/:projectId" element={ <ProjectPage />} />
         <Route path="/contact" element={ <ContactPage />} />
       </Routes>
       {footerDisplay? 

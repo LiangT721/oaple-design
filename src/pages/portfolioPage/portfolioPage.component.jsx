@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
 
+
 import MobilePageImg from "../../component/mobilePageImg/mobilePageImg.component";
 import Text from "../../component/text/text.component";
 import PortfortGroupList from "../../component/portfolioGroupList/portfolioGroupList.component";
@@ -52,5 +53,6 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = (state) => ({
   projectCategory: state.project.projectCategory,
 });
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(PortfolioPage);
