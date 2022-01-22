@@ -13,6 +13,7 @@ const ImageList = ({imgs, appearSlider}) => {
     <div className="image-list-container container-xl mb-5">
         {imgs.map((img,index) => (
           <div className="img-container my-3 ratio ratio-4x3" key={index}>
+          <div>{index}</div>
               <Image src={img} className="project-img"
               onClick={()=>appearSlider(index)}
               />

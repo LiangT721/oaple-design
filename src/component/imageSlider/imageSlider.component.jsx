@@ -1,12 +1,18 @@
-import React from "react";
+import React,{ useState } from "react";
 import { connect } from "react-redux";
-import  Image from "react-bootstrap/Image";
+import Carousel from "react-bootstrap/Carousel";
+
 import { hideSlider } from "../../redux/project/project.action";
 import "./imageSlider.style.scss";
 
 const ImageSlider = ({sliderIndex,imgs,hideSlider}) => {
     console.log(sliderIndex)
     console.log(imgs)
+    const [index, setIndex] = useState(sliderIndex);
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+      };
+
   return (
     <div className="image-slider position-fixed">
       <div className="cross">
@@ -26,7 +32,20 @@ const ImageSlider = ({sliderIndex,imgs,hideSlider}) => {
           />
         </svg>
       </div>
-      <Image src={imgs[sliderIndex]} className="slider-img" />
+      <div className="slider-container d-flex justify-content-center align-items-center h-100">
+      <Carousel className="slider-img" activeIndex={index} onSelect={handleSelect}>
+        {imgs.map((img)=>(
+            <Carousel.Item className='h-100'>
+            <img
+              className="slider-img d-block w-100"
+              src={img}
+              alt="Image One"
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+      </div>
+    
     </div>
   );
 };
