@@ -16,15 +16,15 @@ const PortfortGroupList = (props) => {
   };
 
   return (
-    <div className="portfolio-group-list d-flex flex-wrap w-auto">
+    <div className="portfolio-group-list container-xl mb-5">
       {projects.map((project, index) => (
         <div
-          className="portfolio-group-list-project-container position-relative my-5 "
+          className="portfolio-container my-3 ratio ratio-4x3"
           key={index}
         >
-          <Image src={project.titleImg} className="project-img w-100 " />
-          <div className="portfolio-group-list-project-title-container position-absolute top-0 left-0 w-100 h-100">
-            <Button variant="dark" onClick={()=>navigate(`/portfolio/${project.id}`)}>
+          <Image src={project.titleImg} className="portfolio-img w-100 " />
+          <div className="portfolio-title-container position-absolute top-0 left-0 w-100 h-100 d-flex justify-content-center align-items-center">
+            <Button variant="dark" className="portfolio-detail-button px-3" onClick={()=>navigate(`/portfolio/${project.id}`)}>
               Detail
             </Button>
           </div>

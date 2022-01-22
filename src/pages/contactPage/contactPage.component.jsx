@@ -9,14 +9,14 @@ import "./contactPage.style.scss";
 const ContactPage = () => {
 
   return (
-    <Fragment>
-      <div className="contact-map h-sm-30vh bg-color1">
+    <div className="container-xl">
+      <div className="contact-map h-sm-30vh">
         <GoogleMapDiv />
       </div>
       <div className="contact-text">
         <ContactText />
       </div>
-    </Fragment>
+    </div>
   );
 };
 

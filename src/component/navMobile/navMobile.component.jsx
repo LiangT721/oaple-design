@@ -16,7 +16,7 @@ const portfolio = ["portfolio", "作品", "portfolio"];
 const contact = ["contact", "联系我们", "contact"];
 
 const NavMobile = ({ NavHidden, toggleNavHidden }) => (
-  <div className="nav d-flex justify-content-center d-md-none">
+  <div className="nav d-flex justify-content-center d-lg-none">
     <div
       className={`${
         NavHidden ? "fold" : "unfold"

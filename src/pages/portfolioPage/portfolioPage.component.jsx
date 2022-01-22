@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { connect } from "react-redux";
 
 
@@ -23,25 +23,25 @@ const PortfolioPage = ({ projectCategory,toggleProjectCategory1,toggleProjectCat
   const subTitle2 = ["Category-2", "分类2"];
 
   return (
-    <Fragment>
+    <div className="container-xl">
       <MobilePageImg img={portfolioPageImg} />
-      <div className="my-service-header page-header text-center">
+     {/* <div className="my-service-header page-header text-center">
         <Text text={title} />
-      </div>
-      <div className="my-service-subtitle-container d-flex justify-content-evenly m-5">
-        <div className={`${projectCategory? "":"unselect"} my-service-subtitle`}
+  </div> */}
+      <div className="my-service-subtitle-container d-flex justify-content-evenly m-5 justify-content-md-end">
+        <div className={`${projectCategory? "":"unselect"}  mx-3`}
           onClick={toggleProjectCategory1}>
           <Text text={subTitle1} />
           <NavUnderline expand={projectCategory} />
         </div>
-        <div className={`${!projectCategory? "":"unselect"} my-service-subtitle`}
+        <div className={`${!projectCategory? "":"unselect"} my-service-subtitle mx-3`}
           onClick={toggleProjectCategory2}>
           <Text text={subTitle2} />
           <NavUnderline expand={!projectCategory} />
         </div>
       </div>
       <PortfortGroupList projects={projectCategory? projectGroup1: projectGroup2} />
-    </Fragment>
+    </div>
   );
 };
 

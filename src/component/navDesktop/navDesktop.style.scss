@@ -5,11 +5,12 @@
   margin-top: 5px;
   padding-right: 20px;
   .nav-element {
-    margin: 0 10px;
+    margin: 0 8px;
 
     .text-container {
       margin: 0 15px;
-      font-size: 30px;
+      font-size: 25px;
+      text-transform: capitalize;
       font-weight: 300;
       transition: all 0.5s linear 0s;
       div {

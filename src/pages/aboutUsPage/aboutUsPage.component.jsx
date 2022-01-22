@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Image } from "react-bootstrap";
 
 import MobilePageImg from "../../component/mobilePageImg/mobilePageImg.component";
@@ -13,7 +13,7 @@ const AboutUsPage = () => {
   const title = ["About Us", "关于我们"];
 
   return (
-    <Fragment>
+    <div className="container-xl">
       <MobilePageImg img={aboutUsPageImg} />
       <div className="my-service-header page-header text-center">
         <Text text={title} />
@@ -35,7 +35,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

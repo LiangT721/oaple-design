@@ -1,40 +1,85 @@
-.portfolio-group-list-project-container {
-  width: 80%;
-  max-width: 280px;
-  margin-left: 3rem;
+.portfolio-group-list{
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 1s linear 1s;
+}
+
+.portfolio-container {
+  width: 100%;
+  display: inline-block;
   overflow: hidden;
-    .project-img{
-     transition: all 1s linear;
+}
+.portfolio-img {
+  object-fit: cover;
+}
+
+.portfolio-detail-button{
+  font-size: 1.5rem;
+  
+}
+
+
+@media (min-width: 768px) {
+  .portfolio-container {
+    margin: 0.5%;
+    width: 49%;
+    .portfolio-detail-button{
+    opacity: 0.2;      
     }
-    .portfolio-group-list-project-title-container {
-        cursor: pointer;
+    &:hover{
+      .portfolio-img{
+        transform: scale(1.2);
+        transition: all 1s linear;
+      } 
+      .portfolio-detail-button{
+        opacity: 0.8;      
         transition: all 0.5s linear;
+        }
+    }
+  }
 }
- &:hover {
-     .project-img{
-         transform: scale(1.2);
-     }
-.portfolio-group-list-project-title-container {
-    opacity: 1;
- }}
-}
-
-.portfolio-group-list-project-title-container {
-  background-color: rgba(255, 235, 205, 0.13);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.5;
-
-  .portfolio-group-list-project-text-container {
-    background-color: #080808c4;
-    padding: 10px;
-    border-radius: 5%;
+@media (min-width: 992px) {
+  .portfolio-container {
+    width: 32%;
+    margin: 0.66666%;
   }
 }
 
-// .project-img{
-//     :hover{
-//         transform: scale(1.2);
+
+// .portfolio-group-list-project-container {
+//   width: 80%;
+//   max-width: 280px;
+//   margin-left: 3rem;
+//   overflow: hidden;
+//     .project-img{
+//      transition: all 1s linear;
 //     }
+//     .portfolio-group-list-project-title-container {
+//         cursor: pointer;
+//         transition: all 0.5s linear;
 // }
+//  &:hover {
+//      .project-img{
+//          transform: scale(1.2);
+//      }
+// .portfolio-group-list-project-title-container {
+//     opacity: 1;
+//  }}
+// }
+
+// .portfolio-group-list-project-title-container {
+//   background-color: rgba(255, 235, 205, 0.13);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   opacity: 0.5;
+
+//   .portfolio-group-list-project-text-container {
+//     background-color: #080808c4;
+//     padding: 10px;
+//     border-radius: 5%;
+//   }
+// }
+
+

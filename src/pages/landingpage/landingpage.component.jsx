@@ -9,7 +9,7 @@ import "./landingpage.style.scss";
 const Landingpage = () => {
   return (
     <Fragment>
-      <div className="landingpage bg-color1">
+      <div className="landingpage container-xl">
         <Carousel className="h-100">
           <Carousel.Item className='h-100' interval={1500}>
             <img

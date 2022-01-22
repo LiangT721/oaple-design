@@ -17,7 +17,7 @@ const NavDesktop = () => {
   const pathname = useLocation().pathname;
   console.log(pathname.includes(aboutUs[2]))
   return(
-  <div className="nav-desktop d-none d-sm-flex h-100">
+  <div className="nav-desktop d-none d-lg-flex h-100">
     <Link to='aboutus' className="link nav-element about-us w-auto ">
       <div className="text-container">
         <Text text={aboutUs} />

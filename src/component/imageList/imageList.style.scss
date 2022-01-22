@@ -1,0 +1,29 @@
+.image-list-container {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 1s linear 1s;
+}
+
+.img-container {
+  width: 100%;
+  display: inline-block;
+  background-color: chartreuse;
+}
+.project-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .img-container {
+    margin: 0.5%;
+    width: 49%;
+  }
+}
+@media (min-width: 992px) {
+  .img-container {
+    width: 32%;
+    margin: 0.66666%;
+  }
+}
