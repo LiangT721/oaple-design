@@ -9,18 +9,27 @@
 
     .text-container {
       margin: 0 15px;
-      font-size: 25px;
+      font-size: 20px;
       text-transform: capitalize;
       font-weight: 300;
       transition: all 0.5s linear 0s;
       div {
         margin-bottom: 5px;
-    
       }
     }
   }
-  .desktop-toggle-container{
+  .desktop-toggle-container {
     right: 40px;
     bottom: -20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-desktop {
+    .nav-element {
+      .text-container {
+       font-size: 25px;
+      }
+    }
   }
 }

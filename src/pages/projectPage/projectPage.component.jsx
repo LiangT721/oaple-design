@@ -22,7 +22,7 @@ const ProjectPage = ({ sliderHidden }) => {
   console.log(sliderHidden);
 
   return (
-    <div className="project-page container-xl position-relative">
+    <div className="project-page container-xl position-relative p-0">
       <div className="project-title-img-container">
         <Image src={project.titleImg} className="project-title-img w-100" />
       </div>

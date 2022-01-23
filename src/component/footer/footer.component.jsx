@@ -26,9 +26,7 @@ const Footer = () => (
                 />
               </svg>
             </div>
-            <div className="footer-content-text">
-              {contactText.phone}
-            </div>
+            <a className="link footer-content-text text-light-gray" href={`tel:${contactText.phone}`}>{contactText.phone}</a>
         </div>
         <div className="footer-content-div col-md-2 d-flex">
             <div className="footer-content-icon me-3">
@@ -47,9 +45,8 @@ const Footer = () => (
                 />
               </svg>
             </div>
-            <div className="footer-content-text">
-              {contactText.email}
-            </div>
+            
+            <a className="link footer-content-text text-light-gray" href={`mailto:${contactText.email}`}>{contactText.email}</a>
         </div>
         <div className="footer-content-div col-md-4 d-flex">
             <div className="footer-content-icon me-3">

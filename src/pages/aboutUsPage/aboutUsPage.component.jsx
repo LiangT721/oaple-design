@@ -13,7 +13,7 @@ const AboutUsPage = () => {
   const title = ["About Us", "关于我们"];
 
   return (
-    <div className="container-xl">
+    <div className="container-xl p-0">
       <MobilePageImg img={aboutUsPageImg} />
       <div className="my-service-header page-header text-center">
         <Text text={title} />

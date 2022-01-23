@@ -23,7 +23,7 @@ const PortfolioPage = ({ projectCategory,toggleProjectCategory1,toggleProjectCat
   const subTitle2 = ["Category-2", "分类2"];
 
   return (
-    <div className="container-xl">
+    <div className="container-xl p-0">
       <MobilePageImg img={portfolioPageImg} />
      {/* <div className="my-service-header page-header text-center">
         <Text text={title} />

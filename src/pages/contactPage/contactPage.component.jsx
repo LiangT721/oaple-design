@@ -9,7 +9,7 @@ import "./contactPage.style.scss";
 const ContactPage = () => {
 
   return (
-    <div className="container-xl">
+    <div className="container-xl p-0">
       <div className="contact-map h-sm-30vh">
         <GoogleMapDiv />
       </div>

@@ -1,4 +1,4 @@
-.header{
+.header {
   z-index: 50;
 }
 .header-container {
@@ -14,18 +14,16 @@
     }
 
     .logo-text {
-        font-family: 'Roboto', sans-serif;
-        font-size: 34px;
-        font-weight: bolder;
-        line-height: 50px;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-        .oaple{
-            margin-right: 15px;
-        }
+      font-family: "Roboto", sans-serif;
+      font-size: 34px;
+      font-weight: bolder;
+      line-height: 50px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-left: 10px;
+      .oaple {
+        margin-right: 15px;
+      }
     }
-   
   }
 }
 
@@ -35,4 +33,39 @@ div {
 
 .nav-container {
   height: 20px;
+}
+
+@media (min-width: 992px) {
+  .header-container {
+    .logo-container {
+      width: 25vw;
+      .logo {
+        height: 25px;
+      }
+      .logo-text {
+        font-size: 22px;
+        margin-left: 5px;
+        .oaple {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .header-container {
+    .logo-container {
+      width: 22%;
+      .logo {
+        height: 36px;
+      }
+      .logo-text {
+        font-size: 30px;
+        margin-left: 15px;
+        .oaple {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }

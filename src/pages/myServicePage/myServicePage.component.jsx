@@ -13,7 +13,7 @@ const MyServicePage = () => {
   const title = ['My Service',]
   
   return (
-    <div className="my-service-page container-xl">
+    <div className="my-service-page container-xl p-0">
       <MobilePageImg img={servicePageImg}/>
       <div className="my-service-header page-header text-center">
         <Text text={title} />
