@@ -10,7 +10,7 @@ import "./myServicePage.style.scss";
 
 const MyServicePage = () => {
 
-  const title = ['My Service',]
+  const title = ['My Service','我们的服务']
   
   return (
     <div className="my-service-page container-xl p-0">
