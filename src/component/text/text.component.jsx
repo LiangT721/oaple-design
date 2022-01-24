@@ -12,7 +12,7 @@ const Text = ({eng, text, color}) => (
 )
 
 const mapStateToProps = (state, ownProps) => ({
-    eng: state.header.eng,
+    eng: state.language.eng,
     text: ownProps.text,
     color: ownProps.color
 })

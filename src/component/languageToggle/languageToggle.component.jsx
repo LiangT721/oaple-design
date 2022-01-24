@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { toggleLanguageChi, toggleLanguageEng } from "../../redux/header/header.action";
+import { toggleLanguageChi, toggleLanguageEng } from "../../redux/language/language.action";
 
 import "./languageToggle.style.scss";
 
@@ -21,7 +21,7 @@ const LanguageToggle = ({eng, toggleLanguageChi, toggleLanguageEng}) => {
 };
 
 const mapStateToProps = (state) => ({
-  eng: state.header.eng,
+  eng: state.language.eng,
 });
 const mapDispatchToProps = (dispatch) => ({
   toggleLanguageChi: () => dispatch(toggleLanguageChi()),

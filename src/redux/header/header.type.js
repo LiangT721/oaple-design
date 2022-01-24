@@ -1,7 +1,6 @@
 const HeaderActionTypes = {
     TOGGLE_NAV_HIDDEN: 'TOGGLE_NAV_HIDDEN',
-    TOGGLE_LANGUAGE_CHI:'TOGGLE_LANGUAGE_CHI',
-    TOGGLE_LANGUAGE_ENG:'TOGGLE_LANGUAGE_ENG',
+
 }
 
 export default HeaderActionTypes;
