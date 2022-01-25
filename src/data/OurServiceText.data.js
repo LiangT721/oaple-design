@@ -28,7 +28,7 @@ const technical = {
 const application = {
   title: ["APPLICATIONS"],
   content: [
-    ["Building Permit]"],
+    ["Building Permit"],
     ["Site Plan Approval"],
     ["Site Alteration Approval"],
     ["Zoning Clearance / Compliance"],

@@ -1,20 +1,50 @@
+.my-service-container {
+  width: 70%;
+  margin-left: 15%;
+  display: inline-block;
+  vertical-align:top
+}
+
+.my-service-img-container {
+  width: 100%;
+}
+
 .my-service-img {
-  width: 280px;
-  height: 200px;
+  width: 100%;
   object-fit: cover;
 }
 
 .my-service-title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 200;
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 29px;
   text-transform: capitalize;
 }
 
-.my-service-list-content{
-    font-family: Roboto;
-    font-weight: lighter;
-    font-size: 14px;
+.my-service-list-content {
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .my-service-content-container{
+    padding: 2%;
+  }
+  .my-service-container {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .my-service-img-container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .my-service-container{
+    width: 25%;
+  }
 }

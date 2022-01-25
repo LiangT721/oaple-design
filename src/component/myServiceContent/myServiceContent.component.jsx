@@ -8,10 +8,9 @@ import "./myServiceContent.style.scss";
 const MyServiceContent = () => {
   return (
     <div className="my-service-content-container my-5">
-      <div className="row w-100 ps-4">
         {myServiceList.map((myService) => (
-          <div className="my-service-container w-100 my-3 col" key={myService}>
-            <div className="my-service-img-container d-flex justify-content-center">
+          <div className="my-service-container mb-5" key={myService}>
+            <div className="my-service-img-container justify-content-center ratio ratio-4x3">
               <img
                 src={myService.img}
                 className="my-service-img"
@@ -21,7 +20,7 @@ const MyServiceContent = () => {
             <div className="my-service-title text-center my-3">
               <Text text={myService.title} />
             </div>
-            <div className="my-service-list mx-5">
+            <div className="my-service-list mx-2">
               <ol>
                 {myService.content.map((service, index) => (
                   <li key={index} className="my-service-list-content my-2 px-1">
@@ -32,7 +31,6 @@ const MyServiceContent = () => {
             </div>
           </div>
         ))}
-      </div>
     </div>
   );
 };
