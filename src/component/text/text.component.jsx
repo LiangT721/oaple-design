@@ -6,7 +6,7 @@ import "./text.style.scss";
 const Text = ({eng, text, color}) => (
     <Fragment>
         {
-            eng? <div className={`${color? color:""} text`}>{text[0]}</div>:<div className={`${color? color:""} text`}>{text[1]}</div>
+            eng? <div className={`${color? color:""} text`}>{text[0]}</div>:<div className={`${color? color:""} text-chi`}>{text[1]}</div>
         }
     </Fragment>
 )

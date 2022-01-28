@@ -20,17 +20,17 @@ const AboutUsPage = () => {
       </div>
       <div className="about-us-content-container pt-3 pb-5 px-5">
         <div className="row">
-          <div className="about-us-content about-us-text-part1 order-md-3 col-md-6">
+          <div className="about-us-content about-us-text-part1 order-lg-3 col-lg-6">
             <Text text={aboutUsContent.p1} />
           </div>
-          <div className="order-md-2 col-md-1"></div>
-          <div className="about-us-content about-us-content-img order-md-1 col-md-5">
+          <div className="order-lg-2 col-lg-1"></div>
+          <div className="about-us-content about-us-content-img order-lg-1 col-lg-5">
             <Image
               src={aboutUsContent.img}
               className="about-us-content-img w-100"
             ></Image>
           </div>
-          <div className="about-us-content about-us-text-part2 order-md-4 ">
+          <div className="about-us-content about-us-text-part2 order-lg-4 ">
             <Text text={aboutUsContent.p2} />
           </div>
         </div>

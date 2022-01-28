@@ -5,3 +5,7 @@ body,* {
   padding: 0;
 }
 
+@font-face {
+  font-family:KaiFont;
+  src:url('./asset/fangzhengKaiti.ttf')
+}
