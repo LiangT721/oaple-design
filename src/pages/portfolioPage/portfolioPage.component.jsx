@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+
 import { connect } from "react-redux";
 
 
@@ -18,9 +19,12 @@ import { projectGroup1, projectGroup2 } from "../../data/portfolioGroup.data";
 import "./portfolioPage.style.scss";
 
 const PortfolioPage = ({ projectCategory,toggleProjectCategory1,toggleProjectCategory2 }) => {
-  const title = ["Portfolio", "作品"];
-  const subTitle1 = ["Category-1", "分类1"];
-  const subTitle2 = ["Category-2", "分类2"];
+  // const title = ["Projects", "项目案例"];
+  const subTitle1 = ["Residential", "民用住宅"];
+  const subTitle2 = ["Commercial projects", "商业项目"];
+  useEffect(() => {
+        document.title = 'Projects'
+    }, []);
 
   return (
     <div className="container-xl p-0">

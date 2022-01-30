@@ -12,7 +12,7 @@ import "./navMobile.style.scss";
 
 const aboutUs = ["about us", "关于我们", "aboutus"];
 const myService = ["my service", "我们的服务", "myservice"];
-const portfolio = ["portfolio", "作品", "portfolio"];
+const portfolio = ["Projects", "项目案例", 'portfolio'];
 const contact = ["contact", "联系我们", "contact"];
 
 const NavMobile = ({ NavHidden, toggleNavHidden }) => (

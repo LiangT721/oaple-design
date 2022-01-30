@@ -1,5 +1,3 @@
-import project1Title from "../asset/project/project1title.jpg";
-import project2Title from "../asset/project/project2title.gif";
 
 export const projects = [
   {
@@ -18,7 +16,7 @@ export const projects = [
   {
     id: 2,
     name: "project_2",
-    category: 1,
+    category: 2,
     date: 2022 - 12 - 12,
     size: '1700"',
     location: [
@@ -68,7 +66,7 @@ export const projects = [
       "中文简介1",
     ],
     titleImg: "http://www.oapledesign.ca/projectImg/project_5_cover.jpg",
-    imgs:['http://www.oapledesign.ca/projectImg/project_54_cover.jpg','http://www.oapledesign.ca/projectImg/project_5_1.jpg','http://www.oapledesign.ca/projectImg/project_5_2.jpg']
+    imgs:['http://www.oapledesign.ca/projectImg/project_5_cover.jpg','http://www.oapledesign.ca/projectImg/project_5_1.jpg','http://www.oapledesign.ca/projectImg/project_5_2.jpg']
   },
   
 ];

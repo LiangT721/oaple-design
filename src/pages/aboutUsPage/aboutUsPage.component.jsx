@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Image } from "react-bootstrap";
 
 import MobilePageImg from "../../component/mobilePageImg/mobilePageImg.component";
@@ -11,7 +11,9 @@ import "./aboutUsPage.style.scss";
 
 const AboutUsPage = () => {
   const title = ["About Us", "关于我们"];
-
+  useEffect(() => {
+        document.title = 'About Us'
+    }, []);
   return (
     <div className="container-xl p-0">
       <MobilePageImg img={aboutUsPageImg} />

@@ -2,7 +2,6 @@ import React from "react";
 
 import "./footer.style.scss";
 import { contactText } from "../../data/contactText.data";
-import Text from "../text/text.component";
 
 const Footer = () => (
   <div className="footer bg-dark-gray text-light-gray pt-3 pb-1 px-5 position-absolute bottom-0">
@@ -72,7 +71,7 @@ const Footer = () => (
               </svg>
             </div>
             <div className="footer-content-text">
-              <Text text={contactText.address} />
+              {contactText.address}
             </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ function App({test}) {
       <Header />
       {test}
       <Routes>
-        <Route path="/" element={ <Landingpage />} exact/>
+        <Route path="/" element={ <Landingpage />} exact />
         <Route path="/aboutus" element={ <AboutUsPage />} />
         <Route path="/myservice" element={ <MyServicePage />} />
         <Route path="/portfolio" element={ <PortfolioPage />} exact />

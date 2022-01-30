@@ -1,0 +1,13 @@
+.contact-map{
+    height: 60vh;
+}
+
+@media (min-width:992px) {
+    .contact-map{
+        height: 40vh;
+    }
+}
+
+.map-img{
+    object-fit: cover;
+}

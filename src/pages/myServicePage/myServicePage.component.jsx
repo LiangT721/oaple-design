@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+
 
 import MyServiceContent from "../../component/myServiceContent/myServiceContent.component";
 import MobilePageImg from "../../component/mobilePageImg/mobilePageImg.component";
@@ -11,7 +12,9 @@ import "./myServicePage.style.scss";
 const MyServicePage = () => {
 
   const title = ['My Service','我们的服务']
-  
+  useEffect(() => {
+        document.title = 'My Service'
+    }, []);
   return (
     <div className="my-service-page container-xl p-0">
       <MobilePageImg img={servicePageImg}/>

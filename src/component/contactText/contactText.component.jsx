@@ -24,7 +24,7 @@ const ContactText = () => {
             <Text text={office} />
           </div>
           <div className="contact-text-content-text">
-            <Text text={contactText.address} />
+            {contactText.address}
           </div>
         </div>
         <div className="contact-text-content-div pt-3 pb-2 col-md-3">
