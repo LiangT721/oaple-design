@@ -4,7 +4,7 @@ import { Image } from "react-bootstrap";
 import MobilePageImg from "../../component/mobilePageImg/mobilePageImg.component";
 import Text from "../../component/text/text.component";
 
-import aboutUsPageImg from "../../asset/aboutUsPageImg.jpg";
+import servicePageImg  from "../../asset/servicePageImg.jpg";
 import { aboutUsContent } from "../../data/aboutUsText.data";
 
 import "./aboutUsPage.style.scss";
@@ -16,7 +16,7 @@ const AboutUsPage = () => {
     }, []);
   return (
     <div className="container-xl p-0">
-      <MobilePageImg img={aboutUsPageImg} />
+      <MobilePageImg img={servicePageImg} />
       <div className="my-service-header page-header text-center">
         <Text text={title} />
       </div>
@@ -26,7 +26,7 @@ const AboutUsPage = () => {
             <Text text={aboutUsContent.p1} />
           </div>
           <div className="order-lg-2 col-lg-1"></div>
-          <div className="about-us-content about-us-content-img order-lg-1 col-lg-5">
+          <div className="about-us-content about-us-content-img order-lg-1 col-lg-5 d-none d-lg-block">
             <Image
               src={aboutUsContent.img}
               className="about-us-content-img w-100"

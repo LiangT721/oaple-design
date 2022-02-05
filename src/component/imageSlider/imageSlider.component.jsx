@@ -14,7 +14,7 @@ const ImageSlider = ({ sliderIndex, imgs, hideSlider }) => {
   };
 
   return (
-    <div className="image-slider position-fixed">
+    <div className="image-slider position-fixed d-none d-md-block">
       <div className="cross bg-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"

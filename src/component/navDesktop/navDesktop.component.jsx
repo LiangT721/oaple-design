@@ -11,7 +11,7 @@ import "./navDesktop.style.scss";
 const aboutUs = ["about us", "关于我们", 'aboutus'];
 const myService = ["my service", "我们的服务", 'myservice'];
 const portfolio = ["Projects", "项目案例", 'portfolio'];
-const contact = ["contact", "联系我们", 'contact'];
+const contact = ["contact us", "联系我们", 'contact'];
 
 const NavDesktop = () => {
   const pathname = useLocation().pathname;

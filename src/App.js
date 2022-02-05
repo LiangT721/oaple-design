@@ -11,14 +11,13 @@ import PortfolioPage from "./pages/portfolioPage/portfolioPage.component";
 import ContactPage from "./pages/contactPage/contactPage.component";
 import ProjectPage from "./pages/projectPage/projectPage.component";
 
-function App({test}) {
+function App() {
   const pathname = useLocation().pathname;
   const footerDisplay = pathname !== '/';
 
   return (
     <div className={`${footerDisplay? "footer-padding-bottom":""} holder`} >
       <Header />
-      {test}
       <Routes>
         <Route path="/" element={ <Landingpage />} exact />
         <Route path="/aboutus" element={ <AboutUsPage />} />

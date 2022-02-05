@@ -1,21 +1,39 @@
-
+.contact-text-content-div{
+  margin-bottom: 1rem;
+}
 .contact-text-content-title {
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 35px;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
 
   color: #b1b1b1;
 }
 
 .contact-text-content-text {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight:600;
+  // font-family: Raleway;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   margin-top: 10px;
 
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-text-content{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .contact-text-content-div {
+    padding: 0 20px;
+    // div, a
+    // {
+    //   text-align: center;
+    // }
+  }
 }

@@ -13,22 +13,23 @@ import {
   toggleProjectCategory2,
 } from "../../redux/project/project.action";
 
-import portfolioPageImg from "../../asset/PortfolioPageImg.jpg";
+import servicePageImg  from "../../asset/servicePageImg.jpg";
+
 import { projectGroup1, projectGroup2 } from "../../data/portfolioGroup.data";
 
 import "./portfolioPage.style.scss";
 
 const PortfolioPage = ({ projectCategory,toggleProjectCategory1,toggleProjectCategory2 }) => {
   // const title = ["Projects", "项目案例"];
-  const subTitle1 = ["Residential", "民用住宅"];
-  const subTitle2 = ["Commercial projects", "商业项目"];
+  const subTitle1 = ["House", "民用住宅"];
+  const subTitle2 = ["Commercial", "商业项目"];
   useEffect(() => {
         document.title = 'Projects'
     }, []);
 
   return (
     <div className="container-xl p-0">
-      <MobilePageImg img={portfolioPageImg} />
+      <MobilePageImg img={servicePageImg} />
      {/* <div className="my-service-header page-header text-center">
         <Text text={title} />
   </div> */}

@@ -1,10 +1,25 @@
 .landingpage {
-    height: 82vh;
+    height: 83vh;
     overflow: hidden;
     box-sizing: border-box;
 
     .slider-img {
-        height: 82vh;
+        height:83vh;
         object-fit:cover;
+        background-color: black;
     }
 }
+@media (min-width: 992px) {
+    .landingpage {
+        height: 90vh;
+        overflow: hidden;
+        box-sizing: border-box;
+    
+        .slider-img {
+            height:90vh;
+            object-fit:contain;
+            background-color: black;
+        }
+    }
+  }
+  

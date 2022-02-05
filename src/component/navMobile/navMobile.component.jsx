@@ -13,7 +13,7 @@ import "./navMobile.style.scss";
 const aboutUs = ["about us", "关于我们", "aboutus"];
 const myService = ["my service", "我们的服务", "myservice"];
 const portfolio = ["Projects", "项目案例", 'portfolio'];
-const contact = ["contact", "联系我们", "contact"];
+const contact = ["contact us", "联系我们", "contact"];
 
 const NavMobile = ({ NavHidden, toggleNavHidden }) => (
   <div className="nav d-flex justify-content-center d-lg-none">
@@ -47,7 +47,7 @@ const NavMobile = ({ NavHidden, toggleNavHidden }) => (
     <div className="nav-icon">
       <img
         src={upIcon}
-        className={`${NavHidden ? "down" : ""} upIcon text-dark`}
+        className={`${NavHidden ? "" : "down"} upIcon text-dark`}
         onClick={toggleNavHidden}
         alt=""
       />
