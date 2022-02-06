@@ -11,9 +11,7 @@ const PortfortGroupList = (props) => {
   const { projects } = props;
   console.log(projects);
   let navigate = useNavigate();
-  const handleClick = () => {
-    navigate(`/about/`);
-  };
+ 
 
   return (
     <div className="portfolio-group-list container-xl mb-5">

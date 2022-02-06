@@ -20,7 +20,7 @@ const AboutUsPage = () => {
       <div className="my-service-header page-header text-center">
         <Text text={title} />
       </div>
-      <div className="about-us-content-container pt-3 pb-5 px-5">
+      <div className="about-us-content-container pt-3 px-5">
         <div className="row">
           <div className="about-us-content about-us-text-part1 order-lg-3 col-lg-6">
             <Text text={aboutUsContent.p1} />

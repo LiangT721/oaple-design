@@ -13,7 +13,7 @@ import ProjectPage from "./pages/projectPage/projectPage.component";
 
 function App() {
   const pathname = useLocation().pathname;
-  const footerDisplay = pathname !== '/';
+  const footerDisplay = pathname !== '/' && pathname !== '/contact';
 
   return (
     <div className={`${footerDisplay? "footer-padding-bottom":""} holder`} >

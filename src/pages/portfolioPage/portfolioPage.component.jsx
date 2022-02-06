@@ -21,7 +21,7 @@ import "./portfolioPage.style.scss";
 
 const PortfolioPage = ({ projectCategory,toggleProjectCategory1,toggleProjectCategory2 }) => {
   // const title = ["Projects", "项目案例"];
-  const subTitle1 = ["House", "民用住宅"];
+  const subTitle1 = ["Residential", "住宅项目"];
   const subTitle2 = ["Commercial", "商业项目"];
   useEffect(() => {
         document.title = 'Projects'

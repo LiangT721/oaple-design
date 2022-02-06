@@ -1,17 +1,34 @@
+.back-btn{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 1.2rem;
+    cursor:pointer;
+    text-align: center;
+}
+
+
+
 // .project-title-img{
 //     width: 100%;
 //     // object-fit: contain;
 // }
 
-// @media (min-width: 576px) {
-//     .project-title-img{
-//         // height: 50vh;
-//     }
+@media (min-width: 576px) {
+    .project-title-img-container{
+        margin-bottom: 2rem;
+    }
+   .back-btn{
+       text-align: end;
+       padding-right: 2rem;
+   }
     
-// }
+}
 // @media (min-width: 992px) {
 //     .project-title-img{
 //         // height: 70vh;
 //     }
     
 // }
+
