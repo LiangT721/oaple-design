@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import "./footer.style.scss";
 import { contactText } from "../../data/contactText.data";
 
