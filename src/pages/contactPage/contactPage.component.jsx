@@ -29,9 +29,7 @@ const ContactPage = () => {
       <div className="contact-text">
         <ContactText />
       </div>
-      <div className="contactpage-footer bg-dark-gray text-light-gray">
-        <div className="contactpage-copyright text-center mt-2 ">@2022 OapleDesign Inc.</div>
-      </div>
+      
     </div>
   );
 };
